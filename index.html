@@ -1,0 +1,30 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Hello World Vue - 3</title>
+        <script src="https://unpkg.com/vue@next"></script>
+        
+    </head>
+    <body>
+        <div id="hello">
+          <h1>{{ message }}</h1>
+          <input type="text" v-model=message/>
+        </div>
+        <script>
+            const helloWorld = {
+                data() {
+                return {
+                    message: "Hello World - This is Vue 3"
+                }
+                }
+            }
+            
+            Vue.createApp(helloWorld).mount('#hello')
+        </script>
+        </script>
+        <script src="script.js"></script>
+    </body>
+</html>
